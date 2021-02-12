@@ -1,4 +1,4 @@
-import {Store} from './store';
+import {Store} from '../store';
 
 export const PCComponentes: Store = {
   currency: '€',

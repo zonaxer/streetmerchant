@@ -9,7 +9,6 @@ import {Amazon} from './amazon';
 import {AmazonCa} from './amazon-ca';
 import {AmazonDe} from './amazon-de';
 import {AmazonDeWarehouse} from './amazon-de-warehouse';
-import {AmazonEs} from './amazon-es';
 import {AmazonFr} from './amazon-fr';
 import {AmazonIt} from './amazon-it';
 import {AmazonNl} from './amazon-nl';
@@ -43,7 +42,6 @@ import {Comet} from './comet';
 import {ComputerAlliance} from './computeralliance';
 import {Computeruniverse} from './computeruniverse';
 import {Coolblue} from './coolblue';
-import {Coolmod} from './coolmod';
 import {Corsair} from './corsair';
 import {CorsairUK} from './corsair-uk';
 import {Cpl} from './cpl';
@@ -53,14 +51,12 @@ import {Dcomp} from './dcomp';
 import {Drako} from './drako';
 import {EbGames} from './ebgames';
 import {Ebuyer} from './ebuyer';
-import {Elcorteingles} from './elcorteingles';
 import {Eprice} from './eprice';
 import {Equippr} from './equippr';
 import {Euronics} from './euronics';
 import {EuronicsDE} from './euronics-de';
 import {Evatech} from './evatech';
 import {Evga} from './evga';
-import {EvgaEu} from './evga-eu';
 import {Expert} from './expert';
 import {Futurex} from './futurex';
 import {Galaxus} from './galaxus';
@@ -90,7 +86,6 @@ import {NeweggSg} from './newegg-sg';
 import {Notebooksbilliger} from './notebooksbilliger';
 import {Novatech} from './novatech';
 import {NvidiaDE} from './nvidia-de';
-import {NvidiaES} from './nvidia-es';
 import {NvidiaFR} from './nvidia-fr';
 import {NvidiaGB} from './nvidia-gb';
 import {OfficeDepot} from './officedepot';
@@ -99,7 +94,6 @@ import {Otto} from './otto';
 import {Overclockers} from './overclockers';
 import {PBTech} from './pbtech';
 import {PCByte} from './pcbyte';
-import {PCComponentes} from './pccomponentes';
 import {PCKing} from './pcking';
 import {Pccg} from './pccg';
 import {PlayStation} from './playstation';
@@ -125,17 +119,30 @@ import {ToysRUs} from './toysrus';
 import {Umart} from './umart';
 import {Unieuro} from './unieuro';
 import {Very} from './very';
-import {VsGamers} from './vsgamers';
 import {Vuugo} from './vuugo';
 import {Walmart} from './walmart';
 import {WalmartCa} from './walmart-ca';
 import {WellsTechnology} from './wellstechnology';
-import {Wipoid} from './wipoid';
 import {Xbox} from './xbox';
 import {Zotac} from './zotac';
 import {logger} from '../../logger';
 
+/**
+ * SPANISH STORES
+ */
+import {AmazonEs} from './es/amazon-es';
+import {AmdEs} from './es/amd-es';
+import {Coolmod} from './es/coolmod';
+import {Elcorteingles} from './es/elcorteingles';
+import {EvgaEu} from './es/evga-eu';
+import {NvidiaES} from './es/nvidia-es';
+import {PCComponentes} from './es/pccomponentes';
+import {RedComputer} from './es/redcomputer';
+import {VsGamers} from './es/vsgamers';
+import {Wipoid} from './es/wipoid';
+
 export const storeList = new Map([
+  [AmdEs.name, AmdEs],
   [AComPC.name, AComPC],
   [Adorama.name, Adorama],
   [Allneeds.name, Allneeds],
@@ -243,6 +250,7 @@ export const storeList = new Map([
   [Pny.name, Pny],
   [ProshopDE.name, ProshopDE],
   [ProshopDK.name, ProshopDK],
+  [RedComputer.name, RedComputer],
   [Rosman.name, Rosman],
   [RosmanMelb.name, RosmanMelb],
   [Saturn.name, Saturn],
